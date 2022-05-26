@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>for adoption</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+<h1> Cats For Adoption</h1>
+<p>If you want to adopt a cat! Then go to Contact page, and send your full information, then we will text you</p>
+  <!-- I took the HTML template from https://www.w3schools.com/w3css/tryw3css_templates_food_blog.htm -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/14.jpeg' %}" alt="" style="width:100%">
+      <h3>Name: Sam</h3>
+      <p>Age: two monthes, Gender: female</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/4.jpeg' %}" alt="" style="width:100%">
+      <h3>Name: Fluffy</h3>
+      <p>Age: four monthes, Gender: female</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/18.jpeg' %}" alt="" style="width:100%">
+      <h3>Name: Billy</h3>
+      <p>Age: three monthes, Gender: male</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/12.jpeg' %}" alt="Pasta and Wine" style="width:100%">
+      <h3>Name:Jasper</h3>
+      <p>Age: three monthes, Gender: male</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/13.jpeg' %}" alt="Popsicle" style="width:100%">
+      <h3>Name:Lilly</h3>
+      <p>Age: four monthes, Gender: female</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/2.jpeg' %}" alt="Salmon" style="width:100%">
+      <h3>Name:Tom</h3>
+      <p>Age: three monthes, Gender: male</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/20.jpeg' %}" alt="Sandwich" style="width:100%">
+      <h3>Name: Muffin</h3>
+      <p>Age: two monthes, Gender: female</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{% static 'home/image/21.jpeg' %}" alt="Croissant" style="width:100%">
+      <h3>Name: Sasha</h3>
+      <p>Age: three monthes, Gender: female</p>
+    </div>
+  </div>
+
+<br>
+<!-- End page content -->
+
+
+
+</body>
+</html>
+{% endblock %}

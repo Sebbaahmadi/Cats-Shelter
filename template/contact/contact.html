@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+    <head>
+        <title>  </title>
+        <link href="static/home/css/style1.css" type="text/css" rel="stylesheet"/>
+        <style type="text/css">
+           
+             textarea{border-radius: 5px; }
+            body{background-color:snow;} 
+            section{padding-left: 20px; padding-bottom: 20px;}
+            h1{letter-spacing: 1px;}
+            p{ cursor:alias;}
+            input{cursor:cell;}
+            input:hover{background-color:rgba(186, 211, 162, 0.192);}
+            aside{float:right; width:150px; padding:10px;} 
+            
+            
+        </style>
+    </head>
+
+    <body >       
+        <div class="main">
+
+        <form id="contact-form" name="contact-form" action="{% url 'contact' %}" method="POST">
+
+            <section>
+
+            <h1> Contact Form </h1>
+            <p>If you have any suggestions Or if you want to adopt a cat, Then Contact us ! </p>
+            
+            <!-- must given cross site requst  -->
+            {% csrf_token %}
+
+            <p> Name : </p> 
+            <input type="text" id="name" name="name">
+
+            <p>Email : </p> 
+            <input type="text" id="email" name="email">
+            
+            <p>Subject : </p> 
+            <input type="text" id="subject" name="subject">
+
+            
+            <p> Message:</p>
+            <textarea rows="9" cols="30" id="message" name="message"> </textarea>
+            <input type="submit" id="submit">
+
+           
+            </section>
+
+        </form>
+        </div>
+      
+
+    </body>
+</html> 
+
+{% endblock %}

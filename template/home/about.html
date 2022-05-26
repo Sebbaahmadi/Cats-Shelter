@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<!-- i take the HTML structure from here https://www.w3schools.com/w3css/w3css_templates.asp -->
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="{% static 'home/image/10.jpeg' %}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About us</h1><br>
+      <p class="w3-large">
+        Every cat at our shelter is an individual being with personality, feelings, intrinsic worth and value. As such, they will be treated with respect and care in a safe environment.
+        We started as an individual idea to protect street and home cats from homelessness, suffering from weather conditions, hunger and thirst, at first it was just a room in my house, and thanks to your donations and cooperation, we became a full team and we were able to provide more space and better possibilities for treating and caring for cats, and then searching for a suitable adopter for each cat to ensure a decent life  to it.</p>
+     
+    </div>
+  </div>
+  
+  <hr>
+  
+  
+
+</body>
+</html>
+
+{% endblock %}

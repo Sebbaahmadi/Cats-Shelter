@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+</head>
+
+
+<body>
+    {% block content %}
+
+<!-- colck start -->
+<div class="datetime">
+  <h2 id="message"></h2>
+  <h1 id="clock"> </h1> <h1 id="cl2"></h1>`
+  <p id="demo1"></p>
+</div>
+<!-- colck end -->
+
+<script src="home/js/clock.js"></script>
+<script src="{% static 'home/js/clock.js' %}"></script>
+    
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 style="color: rgb(102, 74, 52);">Cats's Heaven</h1>
+          <p class="lead fw-normal">If you love cats and don’t want to see them suffer,We will take immediate action to save cats’ lives.
+            For our community’s stray cats, shelters literally make the difference between neglect and nurturing, hurting and health, life and death, loneliness and a loving home.
+            
+            Help us provide a healthy life for these cute creatures 🤍</p>
+        </div>
+        <img src="{% static 'home/image/19.jpeg' %}">
+        
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
+
+
+
+    {% endblock %}
+</body>
+</html>
